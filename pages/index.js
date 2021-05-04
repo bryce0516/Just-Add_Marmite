@@ -22,6 +22,15 @@ export default function Recipes({ recipes }) {
       {recipes.items.map((item) => (
         <RecipeCard item={item} />
       ))}
+      <style jsx>
+        {`
+          .recipe-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px 60px;
+          }
+        `}
+      </style>
     </div>
   );
 }
